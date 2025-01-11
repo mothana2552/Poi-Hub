@@ -10,9 +10,9 @@ ScreenGui.ResetOnSpawn = false
 
 MainFrame.Name = "MainFrame"
 MainFrame.Parent = ScreenGui
-MainFrame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-MainFrame.Size = UDim2.new(0, 300, 0, 400)
-MainFrame.Position = UDim2.new(0.5, -150, 0.5, -200)
+MainFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0) -- พื้นหลังสีดำ
+MainFrame.Size = UDim2.new(0, 600, 0, 300) -- ปรับให้สูงขึ้นสำหรับหลายแถว
+MainFrame.Position = UDim2.new(0.5, -300, 0.5, -150)
 MainFrame.Visible = true
 MainFrame.BorderSizePixel = 0
 MainFrame.Draggable = true
@@ -20,7 +20,7 @@ MainFrame.Active = true
 
 TitleLabel.Name = "TitleLabel"
 TitleLabel.Parent = MainFrame
-TitleLabel.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TitleLabel.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 TitleLabel.Size = UDim2.new(1, 0, 0, 40)
 TitleLabel.Font = Enum.Font.GothamBold
 TitleLabel.Text = "Poi"
@@ -29,14 +29,14 @@ TitleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 
 FunctionButtonsFrame.Name = "FunctionButtonsFrame"
 FunctionButtonsFrame.Parent = MainFrame
-FunctionButtonsFrame.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+FunctionButtonsFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 FunctionButtonsFrame.Size = UDim2.new(1, -20, 1, -60)
 FunctionButtonsFrame.Position = UDim2.new(0, 10, 0, 50)
 FunctionButtonsFrame.ScrollBarThickness = 5
 
 ToggleButton.Name = "ToggleButton"
 ToggleButton.Parent = ScreenGui
-ToggleButton.BackgroundColor3 = Color3.fromRGB(255, 85, 85)
+ToggleButton.BackgroundColor3 = Color3.fromRGB(255, 165, 0) -- ปุ่มสีส้ม
 ToggleButton.Size = UDim2.new(0, 50, 0, 50)
 ToggleButton.Position = UDim2.new(0, 10, 0, 10)
 ToggleButton.Font = Enum.Font.GothamBold
@@ -44,46 +44,62 @@ ToggleButton.Text = "Poi"
 ToggleButton.TextSize = 20
 ToggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 
+-- ฟังก์ชันทั้งหมด
 local functionScripts = {
-    ["[+] บิน ไวกว่าพ่อมึงอีก"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/7YkLiyMb"))() end,
-    ["[+] ฆ่าบอท ทุกตัว (บางแมพ)"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/DczvQZyU"))() end,
-    ["[+] ล็อคหัว"] = function() loadstring(game:HttpGet('https://gist.githubusercontent.com/Aimboter477387/582af6aec49782899d5d375ab239039e/raw/51b6ddf5dc74731a24f912134061f150b6f6b316/gistfile1.txt'))() end,
+    ["[+] บินไวกว่าพ่อมึงอีก"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/7YkLiyMb"))() end,
+    ["[+] ฆ่าบอท"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/DczvQZyU"))() end,
+    ["[+] ล็อคหัว"] = function() loadstring(game:HttpGet("https://gist.githubusercontent.com/Aimboter477387/582af6aec49782899d5d375ab239039e/raw/51b6ddf5dc74731a24f912134061f150b6f6b316/gistfile1.txt"))() end,
     ["[+] เพิ่ม FPS"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/FrMaC7KA"))() end,
-    ["[+] วิ่งเร็ว 4 เท่า"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/pZhkm5mD"))() end,
-    ["[+] เสกของ (บางแมพ)"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/Y19HKccz"))() end,
-    ["[+] hitbox 50%"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/vk5xsDiB"))() end,
-    ["[+] มองทะลุ EPS"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/xz6ngn1g", true))() end,
-    ["[+] หายตัว"] = function() loadstring(game:HttpGet('https://pastebin.com/raw/3Rnd9rHf'))() end,
-    ["[+] กระชากคอ"] = function() loadstring(game:HttpGet('https://pastebin.com/raw/zWgKSfGf'))() end,
+    ["[+] วิ่งเร็ว"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/pZhkm5mD"))() end,
+    ["[+] เสกของ"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/Y19HKccz"))() end,
+    ["[+] hitbox"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/vk5xsDiB"))() end,
+    ["[+] มองทะลุ"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/xz6ngn1g", true))() end,
+    ["[+] หายตัว"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/3Rnd9rHf"))() end,
+    ["[+] กระชากคอ"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/zWgKSfGf"))() end,
     ["[+] F3X"] = function() loadstring(game:GetObjects("rbxassetid://6695644299")[1].Source)() end,
-    ["[+] คำสั่งเเอดมิน"] = function() loadstring(game:HttpGet"https://pastebin.com/raw/3P1z104N")() end,
-    ["[+] วาปเตะผู้เล่นหลุดแมพ"] = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))() end,
-    ["[+] เล่นว่าว"] = function()
-loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw"))("Spider Script") end
+    ["[+] คำสั่งแอดมิน"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/3P1z104N"))() end,
+    ["[+] เตะผู้เล่นในเซิฟทั้งหมด"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))() end,
+    ["[+] เล่นว่าว"] = function() loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw"))("Spider Script") end
 }
 
+-- จัดปุ่มให้อยู่หลายแถว
+local xOffset = 10
 local yOffset = 10
+local buttonsPerRow = 4
+local buttonWidth = 140
+local buttonHeight = 30
+local spacing = 10
+local rowCounter = 0
 local totalHeight = 0
+
 for name, func in pairs(functionScripts) do
     local button = Instance.new("TextButton")
     button.Name = name
     button.Parent = FunctionButtonsFrame
-    button.BackgroundColor3 = Color3.fromRGB(255, 85, 85)
-    button.Size = UDim2.new(1, -20, 0, 30)
-    button.Position = UDim2.new(0, 10, 0, yOffset)
+    button.BackgroundColor3 = Color3.fromRGB(255, 165, 0) -- ปุ่มสีส้ม
+    button.Size = UDim2.new(0, buttonWidth, 0, buttonHeight)
+    button.Position = UDim2.new(0, xOffset, 0, yOffset)
     button.Font = Enum.Font.Gotham
     button.TextSize = 14
     button.TextColor3 = Color3.fromRGB(255, 255, 255)
     button.Text = name
     button.MouseButton1Click:Connect(func)
 
-    yOffset = yOffset + 40
-    totalHeight = totalHeight + 40
+    xOffset = xOffset + buttonWidth + spacing
+    rowCounter = rowCounter + 1
+
+    if rowCounter >= buttonsPerRow then
+        xOffset = 10
+        yOffset = yOffset + buttonHeight + spacing
+        rowCounter = 0
+    end
+
+    totalHeight = yOffset + buttonHeight
 end
 
 FunctionButtonsFrame.CanvasSize = UDim2.new(0, 0, 0, totalHeight)
 
+-- เปิด/ปิดหน้าหลัก
 ToggleButton.MouseButton1Click:Connect(function()
     MainFrame.Visible = not MainFrame.Visible
 end)
