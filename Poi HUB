@@ -55,22 +55,22 @@ ToggleButton.MouseButton1Click:Connect(function()
     MainFrame.Visible = not MainFrame.Visible
 end)
 
--- Function Scripts
+-- Function Scripts (เอาสัญลักษณ์ [+] ออก)
 local functionScripts = {
-    ["[+] บิน ไวกว่าพ่อมึงอีก"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/7YkLiyMb"))() end,
-    ["[+] ฆ่าบอท ทุกตัว (บางแมพ)"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/DczvQZyU"))() end,
-    ["[+] ล็อคหัว"] = function() loadstring(game:HttpGet('https://gist.githubusercontent.com/Aimboter477387/582af6aec49782899d5d375ab239039e/raw/51b6ddf5dc74731a24f912134061f150b6f6b316/gistfile1.txt'))() end,
-    ["[+] เพิ่ม FPS"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/FrMaC7KA"))() end,
-    ["[+] วิ่งเร็ว 4 เท่า"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/pZhkm5mD"))() end,
-    ["[+] เสกของ (บางแมพ)"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/Y19HKccz"))() end,
-    ["[+] hitbox 50%"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/vk5xsDiB"))() end,
-    ["[+] มองทะลุ EPS"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/xz6ngn1g", true))() end,
-    ["[+] หายตัว"] = function() loadstring(game:HttpGet('https://pastebin.com/raw/3Rnd9rHf'))() end,
-    ["[+] กระชากคอ"] = function() loadstring(game:HttpGet('https://pastebin.com/raw/zWgKSfGf'))() end,
-    ["[+] F3X"] = function() loadstring(game:GetObjects("rbxassetid://6695644299")[1].Source)() end,
-    ["[+] คำสั่งเเอดมิน"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/3P1z104N"))() end,
-    ["[+] วาปเตะผู้เล่นหลุดแมพ"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))() end,
-    ["[+] เล่นว่าว"] = function() loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw"))("Spider Script") end
+    ["บิน ไวกว่าพ่อมึงอีก"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/7YkLiyMb"))() end,
+    ["ฆ่าบอท ทุกตัว (บางแมพ)"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/DczvQZyU"))() end,
+    ["ล็อคหัว"] = function() loadstring(game:HttpGet('https://gist.githubusercontent.com/Aimboter477387/582af6aec49782899d5d375ab239039e/raw/51b6ddf5dc74731a24f912134061f150b6f6b316/gistfile1.txt'))() end,
+    ["เพิ่ม FPS"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/FrMaC7KA"))() end,
+    ["วิ่งเร็ว 4 เท่า"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/pZhkm5mD"))() end,
+    ["เสกของ (บางแมพ)"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/Y19HKccz"))() end,
+    ["hitbox 50%"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/vk5xsDiB"))() end,
+    ["มองทะลุ EPS"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/xz6ngn1g", true))() end,
+    ["หายตัว"] = function() loadstring(game:HttpGet('https://pastebin.com/raw/3Rnd9rHf'))() end,
+    ["กระชากคอ"] = function() loadstring(game:HttpGet('https://pastebin.com/raw/zWgKSfGf'))() end,
+    ["F3X"] = function() loadstring(game:GetObjects("rbxassetid://6695644299")[1].Source)() end,
+    ["คำสั่งเเอดมิน"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/3P1z104N"))() end,
+    ["วาปเตะผู้เล่นหลุดแมพ"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))() end,
+    ["เล่นว่าว"] = function() loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw"))("Spider Script") end
 }
 
 -- จัดปุ่มฟังก์ชันในรูปแบบแนวนอน (4 ปุ่มต่อแถว)
