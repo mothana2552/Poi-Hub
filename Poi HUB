@@ -38,13 +38,13 @@ FunctionButtonsFrame.Size = UDim2.new(1, -20, 1, -60)
 FunctionButtonsFrame.Position = UDim2.new(0, 10, 0, 50)
 FunctionButtonsFrame.ScrollBarThickness = 5
 
--- ToggleButton (ไม่มีการเปลี่ยนสี ปุ่มใช้รูปภาพสีเหลือง)
+-- ToggleButton (ใช้ Asset ID ใหม่)
 ToggleButton.Name = "ToggleButton"
 ToggleButton.Parent = ScreenGui
 ToggleButton.BackgroundTransparency = 1
 ToggleButton.Size = UDim2.new(0, 70, 0, 70)
 ToggleButton.Position = UDim2.new(0, 20, 0, 20)
-ToggleButton.Image = "rbxassetid://15201311581" -- ใส่ Asset ID รูปภาพสีเหลือง
+ToggleButton.Image = "rbxassetid://78464547405474" -- ใส่ Asset ID รูปใหม่
 
 -- ให้ปุ่ม ToggleButton สามารถลากได้
 ToggleButton.Active = true
