@@ -78,6 +78,7 @@ local functionScripts = {
     ["เสกของ"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/Y19HKccz"))() end,
     ["Tools"] = function() loadstring(game:HttpGet("https://pastefy.app/VYIAk3o1/raw"))() end,
     ["hitbox 50%"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/vk5xsDiB"))() end,
+    ["เดินบนกำเเพง"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))() end,
     ["มองทะลุ EPS"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/xz6ngn1g", true))() end,
     ["หายตัว"] = function() loadstring(game:HttpGet('https://pastebin.com/raw/3Rnd9rHf'))() end,
     ["กระชากคอ"] = function() loadstring(game:HttpGet('https://pastebin.com/raw/zWgKSfGf'))() end,
