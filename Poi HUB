@@ -73,6 +73,7 @@ local functionScripts = {
     ["ล็อคหัว"] = function() loadstring(game:HttpGet('https://gist.githubusercontent.com/Aimboter477387/582af6aec49782899d5d375ab239039e/raw/51b6ddf5dc74731a24f912134061f150b6f6b316/gistfile1.txt'))() end,
     ["เพิ่ม FPS"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/FrMaC7KA"))() end,
     ["วิ่งเร็ว"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/pZhkm5mD"))() end,
+    ["ทำลุกำเเพง"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/SSDq3kd6"))() end,
     ["เตะคนออกเเมพ"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/qMCbGpg5"))() end,
     ["เสกของ"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/Y19HKccz"))() end,
     ["Tools"] = function() loadstring(game:HttpGet("https://pastefy.app/VYIAk3o1/raw"))() end,
