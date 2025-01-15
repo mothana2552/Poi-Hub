@@ -66,7 +66,7 @@ end)
 
 -- Function Scripts
 local functionScripts = {
-    ["บินไวกว่าพ่อมึงอีก"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/7YkLiyMb"))() end,
+    ["บินไวกว่าพ่อมึงอีก"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/UjJzPtYJ"))() end,
     ["วาปตีหลัง"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/UPtX33Bx"))() end,
     ["เเมพสว่าง"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/YCUxAsHD"))() end,
     ["ดึงรถ"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/s5vNaWSp"))() end,
