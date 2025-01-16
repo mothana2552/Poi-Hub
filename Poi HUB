@@ -94,7 +94,7 @@ local functionScripts = {
     ["กระชากคอ"] = function() loadstring(game:HttpGet('https://pastebin.com/raw/zWgKSfGf'))() end,
     ["สร้างบล็อค"] = function() loadstring(game:GetObjects("rbxassetid://6695644299")[1].Source)() end,
     ["คำสั่งแอดมิน"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/3P1z104N"))() end,
-    ["เตะออกเเมพทั้งหมด"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))() end,
+    ["เตะออกเเมพทั้งหมด"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/CTaMBiFh"))() end,
     ["ตัวสูง"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/Eq9wdVcx"))() end,
     ["เล่นว่าว"] = function() loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw"))("Spider Script") end
 }
