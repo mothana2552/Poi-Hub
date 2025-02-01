@@ -96,6 +96,7 @@ local functionScripts = {
     ["คำสั่งแอดมิน"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/QRpYR3Gt"))() end,
     ["เตะออกเเมพทั้งหมด"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/CTaMBiFh"))() end,
     ["ตัวสูง"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/Eq9wdVcx"))() end,
+    ["Build A Boat"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/Yyd8jC7k"))() end,
     ["เล่นว่าว"] = function() loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw"))("Spider Script") end
 }
 
