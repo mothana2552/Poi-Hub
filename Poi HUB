@@ -6,127 +6,143 @@
 ██║     ╚██████╔╝██║    ██║  ██║╚██████╔╝██████╔╝
 ╚═╝      ╚═════╝ ╚═╝    ╚═╝  ╚═╝ ╚═════╝ ╚═════╝ 
 ]]
-local ScreenGui = Instance.new("ScreenGui")
-local MainFrame = Instance.new("Frame")
-local ToggleButton = Instance.new("ImageButton")
-local FunctionButtonsFrame = Instance.new("ScrollingFrame")
-local LogoImage = Instance.new("ImageLabel")
-local TitleText = Instance.new("TextLabel")
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/Q69rcHsK"))()
 
--- ScreenGui
-ScreenGui.Name = "Poi"
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ResetOnSpawn = false
-
--- MainFrame
-MainFrame.Name = "MainFrame"
-MainFrame.Parent = ScreenGui
-MainFrame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-MainFrame.Size = UDim2.new(0, 500, 0, 400)
-MainFrame.Position = UDim2.new(0.5, -250, 0.5, -200)
-MainFrame.Visible = true
-MainFrame.BorderSizePixel = 0
-MainFrame.Draggable = true
-MainFrame.Active = true
-
--- LogoImage
-LogoImage.Name = "LogoImage"
-LogoImage.Parent = MainFrame
-LogoImage.BackgroundTransparency = 1
-LogoImage.Size = UDim2.new(0, 50, 0, 50)
-LogoImage.Position = UDim2.new(0, 10, 0, 10)
-LogoImage.Image = "rbxassetid://78464547405474"
-
--- TitleText
-TitleText.Name = "TitleText"
-TitleText.Parent = MainFrame
-TitleText.BackgroundTransparency = 1
-TitleText.Position = UDim2.new(0.5, -75, 0, 10) -- อยู่ตรงกลางด้านบน
-TitleText.Size = UDim2.new(0, 150, 0, 50)
-TitleText.Font = Enum.Font.GothamBold
-TitleText.Text = "Poi"
-TitleText.TextSize = 30 -- ปรับให้ใหญ่ขึ้น
-TitleText.TextColor3 = Color3.fromRGB(255, 255, 255)
-TitleText.TextXAlignment = Enum.TextXAlignment.Center
-TitleText.TextYAlignment = Enum.TextYAlignment.Center
-
--- FunctionButtonsFrame
-FunctionButtonsFrame.Name = "FunctionButtonsFrame"
-FunctionButtonsFrame.Parent = MainFrame
-FunctionButtonsFrame.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
-FunctionButtonsFrame.Size = UDim2.new(1, -20, 1, -70)
-FunctionButtonsFrame.Position = UDim2.new(0, 10, 0, 70)
-FunctionButtonsFrame.ScrollBarThickness = 5
-
--- ToggleButton
-ToggleButton.Name = "ToggleButton"
-ToggleButton.Parent = ScreenGui
-ToggleButton.BackgroundTransparency = 1
-ToggleButton.Size = UDim2.new(0, 50, 0, 50)
-ToggleButton.Position = UDim2.new(0, 20, 0, 20)
-ToggleButton.Image = "rbxassetid://78464547405474"
-ToggleButton.Active = true
-ToggleButton.Draggable = true
-
-ToggleButton.MouseButton1Click:Connect(function()
-    MainFrame.Visible = not MainFrame.Visible
-end)
-
--- Function Scripts
-local functionScripts = {
-    ["บินไวกว่าพ่อมึงอีก"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/UjJzPtYJ"))() end,
-    ["Blue Lock"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/MuUvRB9H"))() end,
-    ["วาปตีหลัง"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/UPtX33Bx"))() end,
-    ["เเมพสว่าง"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/YCUxAsHD"))() end,
-    ["ยกรถ"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/s5vNaWSp"))() end,
-    ["ฆ่าบอททุกตัว"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/DczvQZyU"))() end,
-    ["ล็อคหัว"] = function() loadstring(game:HttpGet('https://pastebin.com/raw/XCTLaVGj'))() end,
-    ["เพิ่ม FPS"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/FrMaC7KA"))() end,
-    ["วิ่งเร็ว"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/pZhkm5mD"))() end,
-    ["คลิกเพื่อวาป"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/19QuEExT"))() end,
-    ["เดินทะลุ"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/x59UfDpq"))() end,
-    ["เตะคนออกเเมพ"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/qMCbGpg5"))() end,
-    ["เสกของ"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/Y19HKccz"))() end,
-    ["Tools"] = function() loadstring(game:HttpGet("https://pastefy.app/VYIAk3o1/raw"))() end,
-    ["hitbox 50%"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/vk5xsDiB"))() end,
-    ["เดินบนกำเเพง"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))() end,
-    ["มองทะลุ EPS"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/xz6ngn1g", true))() end,
-    ["ล่องหน"] = function() loadstring(game:HttpGet('https://pastebin.com/raw/3Rnd9rHf'))() end,
-    ["กระชากคอ"] = function() loadstring(game:HttpGet('https://pastebin.com/raw/zWgKSfGf'))() end,
-    ["สร้างบล็อค"] = function() loadstring(game:GetObjects("rbxassetid://6695644299")[1].Source)() end,
-    ["คำสั่งแอดมิน"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/QRpYR3Gt"))() end,
-    ["เตะออกเเมพทั้งหมด"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/CTaMBiFh"))() end,
-    ["ตัวสูง"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/Eq9wdVcx"))() end,
-    ["Build A Boat"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/Yyd8jC7k"))() end,
-    ["เล่นว่าว"] = function() loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw"))("Spider Script") end
+-- กำหนดธีมสีดำและปุ่มสีส้ม
+local customColors = {
+    SchemeColor = Color3.fromRGB(255, 140, 0), -- สีปุ่มสีส้ม
+    Background = Color3.fromRGB(30, 30, 30), -- พื้นหลังสีดำ
+    Header = Color3.fromRGB(20, 20, 20),
+    TextColor = Color3.fromRGB(255, 255, 255),
+    ElementColor = Color3.fromRGB(40, 40, 40)
 }
 
--- จัดปุ่มในแนวนอน
-local xOffset, yOffset = 10, 10
-local buttonPerRow = 4
-local buttonWidth = (MainFrame.Size.X.Offset - (10 * (buttonPerRow + 1))) / buttonPerRow
-local buttonHeight = 40
-local totalHeight = 0
+local Window = Library.CreateLib("Poi Hub", customColors)
 
-for name, func in pairs(functionScripts) do
-    local button = Instance.new("TextButton")
-    button.Name = name
-    button.Parent = FunctionButtonsFrame
-    button.BackgroundColor3 = Color3.fromRGB(255, 165, 0)
-    button.Size = UDim2.new(0, buttonWidth, 0, buttonHeight)
-    button.Position = UDim2.new(0, xOffset, 0, yOffset)
-    button.Font = Enum.Font.Gotham
-    button.TextSize = 14
-    button.TextColor3 = Color3.fromRGB(0, 0, 0)
-    button.Text = name
-    button.MouseButton1Click:Connect(func)
+-- สร้างแท็บ Main
+local TabMain = Window:NewTab("Main")
+local SectionMain = TabMain:NewSection("Main Functions")
 
-    xOffset = xOffset + buttonWidth + 10
-    if xOffset + buttonWidth > MainFrame.Size.X.Offset then
-        xOffset = 10
-        yOffset = yOffset + buttonHeight + 10
-        totalHeight = totalHeight + buttonHeight + 10
-    end
-end
+-- ฟังก์ชันทั้งหมดใน Main
+SectionMain:NewButton("บินไวกว่าพ่อมึงอีก", "ฟังก์ชันบินเร็ว", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/UjJzPtYJ"))()
+end)
 
-FunctionButtonsFrame.CanvasSize = UDim2.new(0, 0, 0, totalHeight + buttonHeight)
+SectionMain:NewButton("วาปตีหลัง", "ฟังก์ชันวาปตีหลัง", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/UPtX33Bx"))()
+end)
+
+SectionMain:NewButton("เเมพสว่าง", "ฟังก์ชันแผนที่สว่าง", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/YCUxAsHD"))()
+end)
+
+SectionMain:NewButton("ยกรถ", "ฟังก์ชันยกรถ", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/s5vNaWSp"))()
+end)
+
+SectionMain:NewButton("ฆ่าบอททุกตัว", "ฟังก์ชันฆ่าบอท", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/DczvQZyU"))()
+end)
+
+SectionMain:NewButton("ล็อคหัว", "ฟังก์ชันล็อคหัว", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/XCTLaVGj'))()
+end)
+
+SectionMain:NewButton("เพิ่ม FPS", "ฟังก์ชันเพิ่ม FPS", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/FrMaC7KA"))()
+end)
+
+SectionMain:NewButton("วิ่งเร็ว", "ฟังก์ชันวิ่งเร็ว", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/pZhkm5mD"))()
+end)
+
+SectionMain:NewButton("คลิกเพื่อวาป", "ฟังก์ชันคลิกเพื่อวาป", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/19QuEExT"))()
+end)
+
+SectionMain:NewButton("เดินทะลุ", "ฟังก์ชันเดินทะลุ", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/x59UfDpq"))()
+end)
+
+SectionMain:NewButton("เตะคนออกเเมพ", "ฟังก์ชันเตะคนออกแผนที่", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/qMCbGpg5"))()
+end)
+
+SectionMain:NewButton("เสกของ", "ฟังก์ชันเสกของ", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/Y19HKccz"))()
+end)
+
+SectionMain:NewButton("Tools", "ฟังก์ชันเครื่องมือ", function()
+    loadstring(game:HttpGet("https://pastefy.app/VYIAk3o1/raw"))()
+end)
+
+SectionMain:NewButton("hitbox 50%", "ฟังก์ชัน hitbox", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/vk5xsDiB"))()
+end)
+
+SectionMain:NewButton("เดินบนกำเเพง", "ฟังก์ชันเดินบนกำแพง", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
+end)
+
+SectionMain:NewButton("มองทะลุ EPS", "ฟังก์ชันมองทะลุ", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/xz6ngn1g", true))()
+end)
+
+SectionMain:NewButton("ล่องหน", "ฟังก์ชันล่องหน", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/3Rnd9rHf'))()
+end)
+
+SectionMain:NewButton("กระชากคอ", "ฟังก์ชันกระชากคอ", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/zWgKSfGf'))()
+end)
+
+SectionMain:NewButton("สร้างบล็อค", "ฟังก์ชันสร้างบล็อค", function()
+    loadstring(game:GetObjects("rbxassetid://6695644299")[1].Source)()
+end)
+
+SectionMain:NewButton("คำสั่งแอดมิน", "ฟังก์ชันคำสั่งแอดมิน", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/QRpYR3Gt"))()
+end)
+
+SectionMain:NewButton("เตะออกเเมพทั้งหมด", "ฟังก์ชันเตะออกแผนที่ทั้งหมด", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/CTaMBiFh"))()
+end)
+
+SectionMain:NewButton("ตัวสูง", "ฟังก์ชันตัวสูง", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/Eq9wdVcx"))()
+end)
+
+SectionMain:NewButton("เล่นว่าว", "ฟังก์ชันเล่นว่าว", function()
+    loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw"))("Spider Script") 
+end)
+
+-- สร้างแท็บ Game
+local TabGame = Window:NewTab("Game")
+
+-- สร้างหมวดหมู่ Game Functions
+local SectionGame = TabGame:NewSection("Game Functions")
+
+-- ฟังก์ชันใน Game
+SectionGame:NewButton("Build A Boat", "สร้างเรือของคุณ", function() 
+    loadstring(game:HttpGet("https://pastebin.com/raw/Yyd8jC7k"))() 
+end)
+
+SectionGame:NewButton("Blue Lock", "เล่น Blue Lock", function() 
+    loadstring(game:HttpGet("https://pastebin.com/raw/MuUvRB9H"))() 
+end)
+
+-- ปุ่มปิด/เปิด UI พร้อมรูปภาพ และสามารถลากได้
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+local ToggleButton = Instance.new("ImageButton")
+ToggleButton.Parent = ScreenGui
+ToggleButton.Size = UDim2.new(0, 50, 0, 50)
+ToggleButton.Position = UDim2.new(0.1, 0, 0.1, 0)  -- ปรับตำแหน่งให้ปุ่มไปทางซ้าย
+ToggleButton.BackgroundTransparency = 1
+ToggleButton.Image = "rbxassetid://78464547405474"
+ToggleButton.Draggable = true
+ToggleButton.Active = true
+ToggleButton.MouseButton1Click:Connect(function()
+    Library:ToggleUI()
+end)
