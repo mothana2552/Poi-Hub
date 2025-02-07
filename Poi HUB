@@ -6,7 +6,7 @@
 ██║     ╚██████╔╝██║    ██║  ██║╚██████╔╝██████╔╝
 ╚═╝      ╚═════╝ ╚═╝    ╚═╝  ╚═╝ ╚═════╝ ╚═════╝ 
 ]]
-local Library = loadstring(game:HttpGet("https://pastebin.com/raw/YVAdhEA1"))()
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/Q69rcHsK"))()
 
 -- กำหนดธีมสีดำและปุ่มสีส้ม
 local customColors = {
