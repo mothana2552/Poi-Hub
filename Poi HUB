@@ -29,7 +29,7 @@ SectionMain:NewButton("บินไวกว่าพ่อมึงอีก", 
 end)
 
 SectionMain:NewButton("วาปตีหลัง", "ฟังก์ชันวาปตีหลัง", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/ATVHTzbW"))()
+    loadstring(game:HttpGet("https://pastebin.com/raw/R3YwinDZ"))()
 end)
 
 SectionMain:NewButton("เเมพสว่าง", "ฟังก์ชันแผนที่สว่าง", function()
