@@ -116,17 +116,14 @@ SectionMain:NewButton("เล่นว่าว", "ฟังก์ชันเ�
     loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw"))("Spider Script") 
 end)
 
-SectionMain:NewButton("รถบิน", "ควย", function()
+SectionMain:NewButton("รถบิน", "ฟังก์ชันรถบิน", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Vehicle%20Fly%20Gui"))("Spider Script") 
 end)
 
 -- สร้างแท็บ Game
 local TabGame = Window:NewTab("Game")
-
--- สร้างหมวดหมู่ Game Functions
 local SectionGame = TabGame:NewSection("Game Functions")
 
--- ฟังก์ชันใน Game
 SectionGame:NewButton("Build A Boat", "สร้างเรือของคุณ", function() 
     loadstring(game:HttpGet("https://pastebin.com/raw/Yyd8jC7k"))() 
 end)
@@ -137,7 +134,7 @@ end)
 
 -- ปุ่มปิด/เปิด UI พร้อมรูปภาพ และสามารถลากได้
 local ScreenGui = Instance.new("ScreenGui")
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.Parent = game.CoreGui -- แก้ไขให้ UI คงอยู่ตลอดเวลา
 
 local ToggleButton = Instance.new("ImageButton")
 ToggleButton.Parent = ScreenGui
