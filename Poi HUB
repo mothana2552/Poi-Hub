@@ -76,8 +76,8 @@ SectionMain:NewButton("Tools", "ฟังก์ชันเครื่องม
     loadstring(game:HttpGet("https://pastefy.app/VYIAk3o1/raw"))()
 end)
 
-SectionMain:NewButton("hitbox 50%", "ฟังก์ชัน hitbox", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/vk5xsDiB"))()
+SectionMain:NewButton("hitbox", "ฟังก์ชัน hitbox", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Update-script-hitbox-9326"))()
 end)
 
 SectionMain:NewButton("เดินบนกำเเพง", "ฟังก์ชันเดินบนกำแพง", function()
