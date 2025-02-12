@@ -136,6 +136,10 @@ SectionGame:NewButton("Blade Ball", "Blade Ball", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/THQQfsVB"))() 
 end)
 
+SectionGame:NewButton("Aimbot blox fruit", "blox fruit", function() 
+    loadstring(game:HttpGet("https://pastebin.com/raw/THQQfsVB"))() 
+end)
+
 -- ปุ่มปิด/เปิด UI พร้อมรูปภาพ และสามารถลากได้
 local ScreenGui = Instance.new("ScreenGui")
 ScreenGui.Parent = game.CoreGui -- แก้ไขให้ UI คงอยู่ตลอดเวลา
