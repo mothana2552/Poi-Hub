@@ -132,6 +132,10 @@ SectionGame:NewButton("Blue Lock", "เล่น Blue Lock", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/MuUvRB9H"))() 
 end)
 
+SectionGame:NewButton("Blade Ball", "Blade Ball", function() 
+    loadstring(game:HttpGet("https://pastebin.com/raw/THQQfsVB"))() 
+end)
+
 -- ปุ่มปิด/เปิด UI พร้อมรูปภาพ และสามารถลากได้
 local ScreenGui = Instance.new("ScreenGui")
 ScreenGui.Parent = game.CoreGui -- แก้ไขให้ UI คงอยู่ตลอดเวลา
