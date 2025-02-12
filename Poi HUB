@@ -137,7 +137,7 @@ SectionGame:NewButton("Blade Ball", "Blade Ball", function()
 end)
 
 SectionGame:NewButton("Aimbot blox fruit", "blox fruit", function() 
-    loadstring(game:HttpGet("https://pastebin.com/raw/THQQfsVB"))() 
+    loadstring(game:HttpGet("https://pastebin.com/raw/Amhgyaty"))() 
 end)
 
 -- ปุ่มปิด/เปิด UI พร้อมรูปภาพ และสามารถลากได้
