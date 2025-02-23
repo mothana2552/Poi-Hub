@@ -117,9 +117,7 @@ SectionMain:NewButton("เล่นว่าว", "ฟังก์ชันเ�
 end)
 
 SectionMain:NewButton("Respawn", "Respawn", function()
-    loadstring(game:HttpGet("local player = game.Players.LocalPlayer
-            local character = player.Character or player.CharacterAdded:Wait()
-            character:BreakJoints()"))() 
+    loadstring(game:HttpGet("https://pastebin.com/raw/yHxeDQA3"))() 
 end)
 
 SectionMain:NewButton("รถบิน", "ฟังก์ชันรถบิน", function()
