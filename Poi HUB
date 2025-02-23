@@ -132,8 +132,8 @@ SectionGame:NewButton("Blue Lock", "เล่น Blue Lock", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/MuUvRB9H"))() 
 end)
 
-SectionGame:NewButton("Blade Ball", "Blade Ball", function() 
-    loadstring(game:HttpGet("https://pastebin.com/raw/THQQfsVB"))() 
+SectionGame:NewButton("Auto Parry Blade Ball", "Blade Ball", function() 
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/FabsKebabs/bbspbzyd/refs/heads/main/bbsv3"))() 
 end)
 
 SectionGame:NewButton("Aimbot blox fruit", "blox fruit", function() 
