@@ -116,6 +116,12 @@ SectionMain:NewButton("เล่นว่าว", "ฟังก์ชันเ�
     loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw"))("Spider Script") 
 end)
 
+SectionMain:NewButton("Respawn", "Respawn", function()
+    loadstring(game:HttpGet("local player = game.Players.LocalPlayer
+            local character = player.Character or player.CharacterAdded:Wait()
+            character:BreakJoints()"))() 
+end)
+
 SectionMain:NewButton("รถบิน", "ฟังก์ชันรถบิน", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Vehicle%20Fly%20Gui"))("Spider Script") 
 end)
